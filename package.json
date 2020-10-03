@@ -46,7 +46,8 @@
   "homepage": "https://github.com/5kytek/create-react-library-starter.git#readme",
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "rollup-plugin-copy": "^3.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
