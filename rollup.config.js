@@ -5,6 +5,7 @@ import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import alias from '@rollup/plugin-alias';
 import path from 'path';
+import copy from 'rollup-plugin-copy'
 
 const packageJson = require("./package.json");
 
@@ -30,6 +31,11 @@ export default {
     resolve(),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
-    postcss()
+    postcss(),
+    copy({
+      targets: [
+        { src: 'src/assets/scss/*', dest: 'dist/scss' },
+      ]
+    })
   ]
 };
