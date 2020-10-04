@@ -1,3 +1,4 @@
-import './assets/scss/main.scss';
+/* eslint-disable import/prefer-default-export */
+import "./assets/scss/main.scss";
 
-export { default as Button } from './examples/Button';
+export { default as Button } from "./examples/Button";

@@ -1,0 +1,32 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-prettier/recommended"
+  ],
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-declaration-strict-value"
+  ],
+  "rules": {
+    "max-line-length": 120,
+    "value-list-comma-newline-after": null,
+    "value-list-comma-space-after": "always-single-line",
+    "selector-class-pattern": ["^[a-z]{2,}(__[a-z]{3,})?(--[a-z]{3,})?(@[a-z]{2,})?"],
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": ["inside-block", "blockless-after-same-name-blockless"],
+        "ignore": ["after-comment"]
+      }
+    ],
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true
+  }
+}
